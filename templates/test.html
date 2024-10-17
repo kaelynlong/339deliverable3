@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Include your FAB styling */
+        .fab-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: block !important;
+        }
+
+        .fab {
+            width: 60px;
+            height: 60px;
+            background-color: rgb(70, 101, 206);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            position: relative;
+            z-index: 1001;
+            cursor: pointer;
+        }
+
+        .fab-options {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            bottom: 80px;
+            right: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .fab-active .fab-options {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .fab-small {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+            background-color: #333;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <title>FAB Test</title>
+</head>
+<body>
+
+    <div class="fab-container">
+        <button id="fab-main" class="fab"><i class="fas fa-info-circle"></i></button>
+        <div id="fab-options" class="fab-options">
+            <button id="dark-mode-toggle" class="fab fab-small" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+            <button id="motion-toggle" class="fab fab-small" aria-label="Toggle Reduced Motion"><i

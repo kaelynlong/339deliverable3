@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Athlete Profile - Bruno Cifaldi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="nav-home-button">HOME</a>
+        <form action="#" method="get" class="search-form">
+            <label for="search-input" class="sr-only">Search Athlete</label>
+            <input type="text" id="search-input" placeholder="Search Athlete" name="q">
+            <button type="submit" aria-label="Search"><i class="fas fa-search"></i></button>
+        </form>
+    </header>
+
+    <main>
+        <section class="profile-header">
+            <div class="profile-details-container">
+                <div class="profile-picture">
+                    <img src="images/pfpdefault.png" alt="Profile picture">
+                </div>
+                <div class="profile-details">
+                    <h1 class="athlete-name">Bruno Cifaldi</h1>
+                    <div class="athlete-details">
+                        <p>More information coming soon.</p>
+                    </div>
+                    <p>9th Grade, Ann Arbor Skyline</p>
+                    <button class="photos-button">Photos</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="season-info-container flex-container">
+            <div class="season-records season-box">
+                <h2>Season Records</h2>
+                <table>
+<tr>
+<th>Year</th>
+<th>Grade</th>
+<th>Time</th>
+</tr>
+<tr>
+<td>2022</td>
+<td>9</td>
+<td>17:56.8</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>10</td>
+<td>16:57.4PR *</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>11</td>
+<td>17:07.8</td>
+</tr>
+</table>
+
+            </div>
+            <div class="graph-box">
+                <h2>Performance Graph</h2>
+                <div class="performance-graph-container">
+                    
+                    <div class="progress-container">
+                        <div class="progress-bar" data-progress="70.08888888888889">
+                            <span class="progress-label">2022 - 17:56.8</span>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <div class="progress-bar" data-progress="71.73888888888888">
+                            <span class="progress-label">2023 - 16:57.4PR *</span>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <div class="progress-bar" data-progress="71.45">
+                            <span class="progress-label">2024 - 17:07.8</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="meet-year season-box full-width">
+            <h2>All Races
+                <button id="toggle-races" aria-expanded="true" aria-label="Toggle All Races">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </h2>
+            <div id="races-table" class="table-wrapper" tabindex="0"><table>
+<tr>
+<th>Place</th>
+<th>Time</th>
+<th>Date</th>
+<th>Meet</th>
+<th>Comments</th>
+</tr>
+<tr>
+<td>88 </td>
+<td>19:17.3</td>
+<td>Aug 29</td>
+<td>37th Early Bird Open (HS Open 5K)</td>
+<td>You were flying today! Keep up that momentum!</td>
+</tr>
+<tr>
+<td>24 </td>
+<td>17:07.8 SR</td>
+<td>Sep 7</td>
+<td>Bret Clements Bath Invitational (Class 1)</td>
+<td>Well, you didn’t set a world record, but you definitely set a team snack record!</td>
+</tr>
+<tr>
+<td>25 </td>
+<td>17:41.7</td>
+<td>Sep 10</td>
+<td>SEC Jamboree #1 (Varsity)</td>
+<td></td>
+</tr>
+<tr>
+<td>70 </td>
+<td>17:57.2</td>
+<td>Sep 14</td>
+<td>56th Holly-Duane Raffin Festival of Races (D1 Boys)</td>
+<td>Excellent job maintaining a steady pace!</td>
+</tr>
+<tr>
+<td>67 </td>
+<td>18:08.6</td>
+<td>Aug 18</td>
+<td>Lamplighter Invite (Boys Varsity - Flight Two)</td>
+<td>Your pacing was solid today. Let's focus on maintaining it throughout the race.</td>
+</tr>
+<tr>
+<td>13 </td>
+<td>17:23.2</td>
+<td>Aug 31</td>
+<td>Early Bird Open (Open Men's 5K)</td>
+<td>Your pacing was solid today. Let's focus on maintaining it throughout the race.</td>
+</tr>
+<tr>
+<td>27 </td>
+<td>17:11.8</td>
+<td>Sep 9</td>
+<td>Bret Clements Bath Invitational (Class 1)</td>
+<td>Well, you didn’t set a world record, but you definitely set a team snack record!</td>
+</tr>
+<tr>
+<td>32 </td>
+<td>17:21.5</td>
+<td>Sep 13</td>
+<td>SEC-HS Jamboree 1 (Red/White Varsity Boys)</td>
+<td>You were flying today! Keep up that momentum!</td>
+</tr>
+<tr>
+<td>113 </td>
+<td>17:21.4</td>
+<td>Sep 23</td>
+<td>Jackson Invitational - Varsity (Orange Division (1000 + enrolment))</td>
+<td></td>
+</tr>
+<tr>
+<td>30 </td>
+<td>16:57.4PR</td>
+<td>Sep 27</td>
+<td>SEC Jamboree 2 (Red) (Varsity (top 10))</td>
+<td>Way to stay focused during the race! Keep that mindset for the next one.</td>
+</tr>
+<tr>
+<td>107 </td>
+<td>16:58.8</td>
+<td>Oct 7</td>
+<td>2023 Portage XC Invitational (Division 1)</td>
+<td>Super strong start! We'll work on keeping that energy the whole race.</td>
+</tr>
+<tr>
+<td>31 </td>
+<td>17:43.3</td>
+<td>Oct 14</td>
+<td>39th Fr Gabriel Richard Cross Country Invite (Varsity Large School)</td>
+<td>Are you sure you're not part cheetah? That was fast!</td>
+</tr>
+<tr>
+<td>27 </td>
+<td>17:34.7</td>
+<td>Oct 19</td>
+<td>SEC HS Championship (Varsity RED Division)</td>
+<td></td>
+</tr>
+<tr>
+<td>22 </td>
+<td>17:09.6</td>
+<td>Oct 28</td>
+<td>MHSAA LP Region 04-1 @ Holly</td>
+<td>Are you sure you're not part cheetah? That was fast!</td>
+</tr>
+<tr>
+<td>216 </td>
+<td>17:14.7</td>
+<td>Nov 4</td>
+<td>MHSAA LP Division 1 Finals</td>
+<td>Nice work! By the way, you know this is a race, not a scenic tour, right?</td>
+</tr>
+<tr>
+<td>119 </td>
+<td>20:26.2</td>
+<td>Aug 19</td>
+<td>Lamplighter Invite (Boys Varsity - Flight Two)</td>
+<td></td>
+</tr>
+<tr>
+<td>106 </td>
+<td>19:56.8</td>
+<td>Sep 1</td>
+<td>22 Saline Early Bird</td>
+<td></td>
+</tr>
+<tr>
+<td>15 </td>
+<td>18:51.1</td>
+<td>Sep 10</td>
+<td>Bret Clements Bath Invitational (J.V.)</td>
+<td></td>
+</tr>
+<tr>
+<td>82 </td>
+<td>18:51.1</td>
+<td>Sep 14</td>
+<td>SEC-HS Jamboree 1 (Red/White Varsity Boys)</td>
+<td>I blinked and missed the first half of your race! That was quick!</td>
+</tr>
+<tr>
+<td>123 </td>
+<td>18:05.7</td>
+<td>Sep 24</td>
+<td>Jackson Invitational - Varsity (Orange Division)</td>
+<td></td>
+</tr>
+<tr>
+<td>47 </td>
+<td>18:28.8</td>
+<td>Sep 28</td>
+<td>SEC-HS Jamboree 2 (Red) (Varsity Boys)</td>
+<td></td>
+</tr>
+<tr>
+<td>66 </td>
+<td>18:26.8</td>
+<td>Oct 8</td>
+<td>2022 Portage XC Invitational (Division 1 Reserve)</td>
+<td>Are you sure you're not part cheetah? That was fast!</td>
+</tr>
+<tr>
+<td>91 </td>
+<td>17:56.8 SR</td>
+<td>Oct 15</td>
+<td>38th Annual Gabriel Richard Invitational (Varsity - Large School)</td>
+<td>You were flying today! Keep up that momentum!</td>
+</tr>
+<tr>
+<td>47 </td>
+<td>18:22.1</td>
+<td>Oct 20</td>
+<td>SEC-HS Championship (Red Varsity)</td>
+<td>Are you sure you're not part cheetah? That was fast!</td>
+</tr>
+<tr>
+<td>9 </td>
+<td>18:01.2</td>
+<td>Oct 27</td>
+<td>Brighton PROM</td>
+<td>Excellent job maintaining a steady pace!</td>
+</tr>
+</table>
+</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Kaelyn Lin for SI 339</p>
+        <a href="#top">Back to top</a>
+    </footer>
+
+    <div class="fab-container">
+        <button id="fab-main" class="fab" aria-label="Information"><i class="fas fa-info-circle"></i></button>
+        <div id="fab-options" class="fab-options">
+            <button id="dark-mode-toggle" class="fab fab-small" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+            <button id="motion-toggle" class="fab fab-small" aria-label="Toggle Reduced Motion"><i class="fas fa-walking"></i></button>
+            <button id="contrast-toggle" class="fab fab-small" aria-label="Toggle High Contrast"><i class="fas fa-adjust"></i></button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('toggle-races').addEventListener('click', function() {
+            const racesTable = document.getElementById('races-table');
+            const icon = this.querySelector('i');
+            const isVisible = racesTable.style.display !== 'none';
+            racesTable.style.display = isVisible ? 'none' : 'block';
+            this.setAttribute('aria-expanded', !isVisible);
+            icon.classList.toggle('fa-chevron-down', isVisible);
+            icon.classList.toggle('fa-chevron-up', !isVisible);
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressBars = document.querySelectorAll('.progress-bar');
+
+            progressBars.forEach(bar => {
+                const progressValue = bar.getAttribute('data-progress');
+                console.log("Progress Value for bar: ", progressValue);
+                setTimeout(() => {
+                    if (progressValue) {
+                        bar.style.width = progressValue + '%';
+                    }
+                }, 200);  // Delay by 200ms for a smooth effect
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const body = document.body;
+
+            // FAB expand/collapse logic
+            const fabMain = document.getElementById('fab-main');
+            const fabContainer = document.querySelector('.fab-container'); // Select the fab-container
+            const fabOptions = document.getElementById('fab-options');
+            const darkModeToggle = document.getElementById('dark-mode-toggle');
+            const motionToggle = document.getElementById('motion-toggle');
+            const contrastToggle = document.getElementById('contrast-toggle');
+
+            fabMain.addEventListener('click', () => {
+                fabContainer.classList.toggle('fab-active');
+            });
+
+            // Manual Dark Mode Toggle
+            darkModeToggle.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+            });
+
+            // Manual Reduced Motion Toggle
+            motionToggle.addEventListener('click', () => {
+                body.classList.toggle('reduced-motion');
+            });
+
+            // Manual High Contrast Toggle
+            contrastToggle.addEventListener('click', () => {
+                body.classList.toggle('high-contrast');
+            });
+        });
+
+        // Function to simulate hover on mobile devices using touch events
+        document.addEventListener('DOMContentLoaded', function () {
+            const athleteNames = document.querySelectorAll('.athlete-name');
+            athleteNames.forEach(name => {
+                name.addEventListener('touchstart', function () {
+                    const details = this.nextElementSibling;
+                    if (details.style.maxHeight) {
+                        details.style.maxHeight = null;
+                        details.style.opacity = 0;
+                    } else {
+                        details.style.maxHeight = details.scrollHeight + "px";
+                        details.style.opacity = 1;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

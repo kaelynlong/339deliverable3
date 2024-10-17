@@ -43,9 +43,18 @@
     </main>
     
     <footer>
-        <p>Created by Kaleyn Lin, Nick Pisarczyk, and Aditya Tambe for SI 339</p>
+        <p>Created by Kaleyn Lin for SI 339</p>
         <a href="#top">Back to top</a>
     </footer>
-    
+
+    <script>
+        document.querySelector('a[href="#top-heading"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,  // Scroll to the very top
+                behavior: 'smooth'  // Smooth scrolling behavior
+            });
+        });
+    </script> 
 </body>
 </html>

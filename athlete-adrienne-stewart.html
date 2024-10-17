@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Athlete Profile - Adrienne Stewart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="nav-home-button">HOME</a>
+        <form action="#" method="get" class="search-form">
+            <label for="search-input" class="sr-only">Search Athlete</label>
+            <input type="text" id="search-input" placeholder="Search Athlete" name="q">
+            <button type="submit" aria-label="Search"><i class="fas fa-search"></i></button>
+        </form>
+    </header>
+
+    <main>
+        <section class="profile-header">
+            <div class="profile-details-container">
+                <div class="profile-picture">
+                    <img src="images/pfpdefault.png" alt="Profile picture">
+                </div>
+                <div class="profile-details">
+                    <h1 class="athlete-name">Adrienne Stewart</h1>
+                    <div class="athlete-details">
+                        <p>More information coming soon.</p>
+                    </div>
+                    <p>9th Grade, Ann Arbor Skyline</p>
+                    <button class="photos-button">Photos</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="season-info-container flex-container">
+            <div class="season-records season-box">
+                <h2>Season Records</h2>
+                <table>
+<tr>
+<th>Year</th>
+<th>Grade</th>
+<th>Time</th>
+</tr>
+<tr>
+<td>2022</td>
+<td>9</td>
+<td>22:40.6</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>10</td>
+<td>22:21.2PR *</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>11</td>
+<td>23:31.1</td>
+</tr>
+</table>
+
+            </div>
+            <div class="graph-box">
+                <h2>Performance Graph</h2>
+                <div class="performance-graph-container">
+                    
+                    <div class="progress-container">
+                        <div class="progress-bar" data-progress="62.205555555555556">
+                            <span class="progress-label">2022 - 22:40.6</span>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <div class="progress-bar" data-progress="62.74444444444445">
+                            <span class="progress-label">2023 - 22:21.2PR *</span>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <div class="progress-bar" data-progress="60.802777777777784">
+                            <span class="progress-label">2024 - 23:31.1</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="meet-year season-box full-width">
+            <h2>All Races
+                <button id="toggle-races" aria-expanded="true" aria-label="Toggle All Races">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </h2>
+            <div id="races-table" class="table-wrapper" tabindex="0"><table>
+<tr>
+<th>Place</th>
+<th>Time</th>
+<th>Date</th>
+<th>Meet</th>
+<th>Comments</th>
+</tr>
+<tr>
+<td>20 </td>
+<td>24:40.6</td>
+<td>Sep 10</td>
+<td>SEC Jamboree #1 (Junior Varsity)</td>
+<td>Great run! If only we could bottle that energy for Monday mornings.</td>
+</tr>
+<tr>
+<td>15 </td>
+<td>23:31.1 SR</td>
+<td>Sep 14</td>
+<td>56th Holly-Duane Raffin Festival of Races (D1 JV Girls)</td>
+<td>Awesome race! Let's look at where we can shave off a few more seconds.</td>
+</tr>
+<tr>
+<td>121 </td>
+<td>22:34.7</td>
+<td>Aug 18</td>
+<td>Lamplighter Invite (Girls Varsity - Flight Two)</td>
+<td>Nice job! You really finished strong.</td>
+</tr>
+<tr>
+<td>20 </td>
+<td>22:21.2PR</td>
+<td>Aug 31</td>
+<td>Early Bird Open (Open Women's 5K)</td>
+<td></td>
+</tr>
+<tr>
+<td>79 </td>
+<td>25:20.1</td>
+<td>Sep 9</td>
+<td>Bret Clements Bath Invitational (Class 1)</td>
+<td>You really pushed hard in that final mile, awesome finish!</td>
+</tr>
+<tr>
+<td>155 </td>
+<td>24:07.1</td>
+<td>Oct 7</td>
+<td>2023 Portage XC Invitational (Division 1 Reserve)</td>
+<td></td>
+</tr>
+<tr>
+<td>9 </td>
+<td>23:30.2</td>
+<td>Oct 14</td>
+<td>39th Fr Gabriel Richard Cross Country Invite (JV Large School Div)</td>
+<td></td>
+</tr>
+<tr>
+<td>51 </td>
+<td>24:21.0</td>
+<td>Oct 19</td>
+<td>SEC HS Championship (All Division Reserve)</td>
+<td></td>
+</tr>
+<tr>
+<td>27 </td>
+<td>23:42.6</td>
+<td>Oct 28</td>
+<td>Post Regional Open Meet (PROM) - Springfiled Oaks</td>
+<td>You really pushed hard in that final mile, awesome finish!</td>
+</tr>
+<tr>
+<td>153 </td>
+<td>29:04.5</td>
+<td>Sep 1</td>
+<td>22 Saline Early Bird</td>
+<td></td>
+</tr>
+<tr>
+<td>40 </td>
+<td>24:50.1</td>
+<td>Sep 10</td>
+<td>Bret Clements Bath Invitational (J.V.)</td>
+<td>Super strong start! We'll work on keeping that energy the whole race.</td>
+</tr>
+<tr>
+<td>48 </td>
+<td>25:20.9</td>
+<td>Sep 14</td>
+<td>SEC-HS Jamboree 1 (All Division Reserve GIRLS)</td>
+<td>I blinked and missed the first half of your race! That was quick!</td>
+</tr>
+<tr>
+<td>29 </td>
+<td>24:25.5</td>
+<td>Sep 28</td>
+<td>SEC-HS Jamboree 2 (Red) (Reserve Girls)</td>
+<td></td>
+</tr>
+<tr>
+<td>125 </td>
+<td>23:35.2</td>
+<td>Oct 8</td>
+<td>2022 Portage XC Invitational (Division 1 Reserve)</td>
+<td>You made some great moves on the hills. Keep working on your endurance.</td>
+</tr>
+<tr>
+<td>32 </td>
+<td>23:47.3</td>
+<td>Oct 15</td>
+<td>38th Annual Gabriel Richard Invitational (JV - Large Schools)</td>
+<td>Awesome race! Let's look at where we can shave off a few more seconds.</td>
+</tr>
+<tr>
+<td>46 </td>
+<td>22:46.4</td>
+<td>Oct 20</td>
+<td>SEC-HS Championship (All Division Reserve)</td>
+<td>Are you sure you're not part cheetah? That was fast!</td>
+</tr>
+<tr>
+<td>35 </td>
+<td>22:40.6 SR</td>
+<td>Oct 27</td>
+<td>Brighton PROM</td>
+<td>Nice job! You really finished strong.</td>
+</tr>
+</table>
+</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Kaelyn Lin for SI 339</p>
+        <a href="#top">Back to top</a>
+    </footer>
+
+    <div class="fab-container">
+        <button id="fab-main" class="fab" aria-label="Information"><i class="fas fa-info-circle"></i></button>
+        <div id="fab-options" class="fab-options">
+            <button id="dark-mode-toggle" class="fab fab-small" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+            <button id="motion-toggle" class="fab fab-small" aria-label="Toggle Reduced Motion"><i class="fas fa-walking"></i></button>
+            <button id="contrast-toggle" class="fab fab-small" aria-label="Toggle High Contrast"><i class="fas fa-adjust"></i></button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('toggle-races').addEventListener('click', function() {
+            const racesTable = document.getElementById('races-table');
+            const icon = this.querySelector('i');
+            const isVisible = racesTable.style.display !== 'none';
+            racesTable.style.display = isVisible ? 'none' : 'block';
+            this.setAttribute('aria-expanded', !isVisible);
+            icon.classList.toggle('fa-chevron-down', isVisible);
+            icon.classList.toggle('fa-chevron-up', !isVisible);
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressBars = document.querySelectorAll('.progress-bar');
+
+            progressBars.forEach(bar => {
+                const progressValue = bar.getAttribute('data-progress');
+                console.log("Progress Value for bar: ", progressValue);
+                setTimeout(() => {
+                    if (progressValue) {
+                        bar.style.width = progressValue + '%';
+                    }
+                }, 200);  // Delay by 200ms for a smooth effect
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const body = document.body;
+
+            // FAB expand/collapse logic
+            const fabMain = document.getElementById('fab-main');
+            const fabContainer = document.querySelector('.fab-container'); // Select the fab-container
+            const fabOptions = document.getElementById('fab-options');
+            const darkModeToggle = document.getElementById('dark-mode-toggle');
+            const motionToggle = document.getElementById('motion-toggle');
+            const contrastToggle = document.getElementById('contrast-toggle');
+
+            fabMain.addEventListener('click', () => {
+                fabContainer.classList.toggle('fab-active');
+            });
+
+            // Manual Dark Mode Toggle
+            darkModeToggle.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+            });
+
+            // Manual Reduced Motion Toggle
+            motionToggle.addEventListener('click', () => {
+                body.classList.toggle('reduced-motion');
+            });
+
+            // Manual High Contrast Toggle
+            contrastToggle.addEventListener('click', () => {
+                body.classList.toggle('high-contrast');
+            });
+        });
+
+        // Function to simulate hover on mobile devices using touch events
+        document.addEventListener('DOMContentLoaded', function () {
+            const athleteNames = document.querySelectorAll('.athlete-name');
+            athleteNames.forEach(name => {
+                name.addEventListener('touchstart', function () {
+                    const details = this.nextElementSibling;
+                    if (details.style.maxHeight) {
+                        details.style.maxHeight = null;
+                        details.style.opacity = 0;
+                    } else {
+                        details.style.maxHeight = details.scrollHeight + "px";
+                        details.style.opacity = 1;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

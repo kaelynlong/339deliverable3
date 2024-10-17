@@ -5,71 +5,215 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/reset.css">
    <link rel="stylesheet" href="css/style.css">
-   <title>Men's and Women's Top 10 XC Times</title>
+   <title>Homepage</title>
    <!-- Font Awesome CDN for the search icon -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
         <a href="index.html" class="nav-home-button" id="top">HOME</a>
-
-        <!-- Accessible search form with hidden label and icon button -->
         <form action="#" method="get" class="search-form">
-            <label for="search-input" class="sr-only">Search Athlete</label> <!-- Screen-reader only label -->
-            <input type="text" id="search-input" placeholder="Search Athlete" name="q">
-            
+            <label for="search-input" class="sr-only">Search Athlete</label>
+            <input type="text" id="search-input" placeholder="Search Athlete" name="q" aria-label="Search Athlete">
             <button type="submit" aria-label="Search">
-                <i class="fas fa-search"></i> <!-- Font Awesome search icon -->
+                <i class="fas fa-search"></i> 
             </button>
         </form>
     </header>
 
     <main>
-        <h1>Top 10 Overall Rankings for Men and Women</h1>
+        <h1 id="top-heading">Top 10 Men’s and Women’s Cross Country Rankings</h1>
         <section class="meet-results">
             <div class="season-box">
-                <h2>Top 10 Men</h2>
+                <h2>Men’s Top 10</h2>
                 <table>
                     <tr>
                         <th>Rank</th>
                         <th>Name</th>
                         <th>Time</th>
                     </tr>
+                    <!-- Loop through all men athletes in the top 10 -->
+                    
                     <tr>
-                        <td>1</td>
-                        <td><a href="athlete-alex.html">Alex Nemecek</a></td>
-                        <td>19:21.4 SR</td>
+                        <td>
+                            
+                                <img src="images/first.png" alt="1st place medal" style="width: 30px; height: 30px;">
+                            
+                        </td>
+                        <td><a href="athlete-bruno-cifaldi.html">Bruno Cifaldi</a></td>
+                        <td>17:07.8</td>
                     </tr>
+                    
                     <tr>
-                        <td>2</td>
-                        <td><a href="athlete-amir.html">Amir Abston</a></td>
+                        <td>
+                            
+                                <img src="images/second.png" alt="2nd place medal" style="width: 30px; height: 30px;">
+                            
+                        </td>
+                        <td><a href="athlete-enshu-kuan.html">Enshu Kuan</a></td>
+                        <td>17:44.4</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            
+                                <img src="images/third.png" alt="3rd place medal" style="width: 30px; height: 30px;">
+                            
+                        </td>
+                        <td><a href="athlete-dylan-hanley.html">Dylan Hanley</a></td>
+                        <td>18:13.9 PR</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            
+                                4
+                            
+                        </td>
+                        <td><a href="athlete-elliot-daley.html">Elliot Daley</a></td>
+                        <td>19:05.6 PR</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            
+                                5
+                            
+                        </td>
+                        <td><a href="athlete-alex-nemecek.html">Alex Nemecek</a></td>
+                        <td>19:21.4</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            
+                                6
+                            
+                        </td>
+                        <td><a href="athlete-emmett-strait.html">Emmett Strait</a></td>
+                        <td>19:41.3 PR</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            
+                                7
+                            
+                        </td>
+                        <td><a href="athlete-ethan-miller.html">Ethan Miller</a></td>
+                        <td>21:25.1 PR</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            
+                                8
+                            
+                        </td>
+                        <td><a href="athlete-cole-harms.html">Cole Harms</a></td>
+                        <td>24:34.5 PR</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            
+                                9
+                            
+                        </td>
+                        <td><a href="athlete-amir-abston.html">Amir Abston</a></td>
                         <td>25:25.0 PR</td>
                     </tr>
+                    
+                    <tr>
+                        <td>
+                            
+                                10
+                            
+                        </td>
+                        <td><a href="athlete-caspian-ruiz.html">Caspian Ruiz</a></td>
+                        <td>25:52.7 PR</td>
+                    </tr>
+                    
                 </table>
             </div>
             <div class="season-box">
-                <h2>Top 10 Women</h2>
+                <h2>Women's Top 10</h2>
                 <table>
                     <tr>
                         <th>Rank</th>
                         <th>Name</th>
                         <th>Time</th>
                     </tr>
+                    <!-- Loop through all women athletes in the top 10 -->
+                    
                     <tr>
-                        <td>1</td>
-                        <td><a href="athlete-adrienne.html">Adrienne Stewart</a></td>
-                        <td>23:31.1 SR</td>
+                        <td>
+                            
+                                <img src="images/first.png" alt="1st place medal" style="width: 30px; height: 30px;">
+                            
+                        </td>
+                        <td><a href="athlete-adrienne-stewart.html">Adrienne Stewart</a></td>
+                        <td>23:31.1</td>
                     </tr>
+                    
                 </table>
             </div>
         </section>
-
     </main>
     
     <footer>
-        <p>Created by Kaelyn Lin, Nick Pisarczyk, and Aditya Tambe for SI 339</p>
-        <a href="#top">Back to top</a>
+        <p>Created by Kaelyn Lin for SI 339</p>
+        <a href="#top-heading">Back to top</a>
     </footer>
 
+    <div class="fab-container">
+        <button id="fab-main" class="fab" aria-label="Information"><i class="fas fa-info-circle"></i></button>
+        <div id="fab-options" class="fab-options">
+            <button id="dark-mode-toggle" class="fab fab-small" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+            <button id="motion-toggle" class="fab fab-small" aria-label="Toggle Reduced Motion"><i class="fas fa-walking"></i></button>
+            <button id="contrast-toggle" class="fab fab-small" aria-label="Toggle High Contrast"><i class="fas fa-adjust"></i></button>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('a[href="#top-heading"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,  // Scroll to the very top
+                behavior: 'smooth'  // Smooth scrolling behavior
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const body = document.body;
+
+            // FAB expand/collapse logic
+            const fabMain = document.getElementById('fab-main');
+            const fabContainer = document.querySelector('.fab-container'); // Select the fab-container
+            const fabOptions = document.getElementById('fab-options');
+            const darkModeToggle = document.getElementById('dark-mode-toggle');
+            const motionToggle = document.getElementById('motion-toggle');
+            const contrastToggle = document.getElementById('contrast-toggle');
+
+            fabMain.addEventListener('click', () => {
+                fabContainer.classList.toggle('fab-active');
+            });
+
+            // Manual Dark Mode Toggle
+            darkModeToggle.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+            });
+
+            // Manual Reduced Motion Toggle
+            motionToggle.addEventListener('click', () => {
+                body.classList.toggle('reduced-motion');
+            });
+
+            // Manual High Contrast Toggle
+            contrastToggle.addEventListener('click', () => {
+                body.classList.toggle('high-contrast');
+            });
+        });
+    </script>     
 </body>
 </html>
