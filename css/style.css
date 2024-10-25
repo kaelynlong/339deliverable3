@@ -52,6 +52,8 @@ h2 {
     transition: color 0.3s ease;
 }
 
+/* Home button */
+
 .nav-home-button {
     font-size: 18px;
     color: #333;
@@ -64,6 +66,8 @@ h2 {
 .nav-home-button:hover {
     color: rgb(70, 101, 206);
 }
+
+/* Search */
 
 .search-form {
     display: flex;
@@ -118,6 +122,8 @@ h2 {
     border: 0;
     color: #000;
 }
+
+/* Footer */
 
 footer {
     text-align: center;
@@ -235,7 +241,7 @@ body.dark-mode table a:hover {
 }
 
 body.dark-mode table td {
-    color: #ffffff; /* Make rank and time numbers white */
+    color: #ffffff;
 }
 
 body.dark-mode h1, 
@@ -307,7 +313,7 @@ body.dark-mode .sr-only {
 
 body.high-contrast header {
     background-color: #000000; 
-    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.3); /* Higher contrast shadow */
+    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.3);
 }
 
 body.high-contrast .profile-header {
@@ -335,7 +341,7 @@ body.high-contrast table td {
 
 body.high-contrast h1, 
 body.high-contrast h2 {
-    color: #ffff00; /* Headings */
+    color: #ffff00;
 }
 
 body.high-contrast main {
@@ -365,13 +371,13 @@ body.high-contrast table th {
 }
 
 body.high-contrast table tr:nth-child(even) {
-    background-color: #000000; /* Dark row */
-    color: #ffff00; /* High-contrast yellow text */
+    background-color: #000000; 
+    color: #ffff00;
 }
 
 body.high-contrast table tr:nth-child(odd) {
-    background-color: #333333; /* Slightly lighter row */
-    color: #ffff00; /* High-contrast yellow text */
+    background-color: #333333; 
+    color: #ffff00;
 }
 
 body.high-contrast footer {
@@ -428,7 +434,6 @@ body.reduced-motion * {
 
 /* ===================== Index Page Styles ===================== */
 
-/* Flexbox for meet-results */
 .meet-results {
     display: flex;
     justify-content: space-between;
@@ -437,7 +442,7 @@ body.reduced-motion * {
 }
 
 .season-box {
-    width: 48%; /* Default is side-by-side (48% width each) */
+    width: 48%; 
     padding: 20px;
 }
 
@@ -582,7 +587,7 @@ table {
 }
 
 #races-table table {
-    min-width: 600px; /* Ensures the table has a minimum width */
+    min-width: 600px;
 }
 
 #toggle-races {
