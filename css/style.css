@@ -308,6 +308,14 @@ body.dark-mode .sr-only {
     color: #fff;
 }
 
+body.dark-mode .performance-icon {
+    color: #fff;
+}
+
+body.dark-mode .season-icon {
+    color: #ffffff; 
+}
+
 /* ========================= High contrast mode ========================= */
 
 
@@ -422,6 +430,14 @@ body.high-contrast .fab:hover {
 }
 
 body.high-contrast .sr-only {
+    color: #ffff00;
+}
+
+body.high-contrast .performance-icon {
+    color: #ffff00;
+}
+
+body.high-contrast .season-icon {
     color: #ffff00;
 }
 
@@ -553,6 +569,12 @@ table img {
     margin-top: 20px;
 }
 
+.season-icon {
+    color: rgb(70, 101, 206); 
+    margin-left: 10px; 
+    font-size: 24px;   
+    vertical-align: middle;
+}
 
 .flex-container {
     display: flex; 
@@ -564,6 +586,7 @@ table img {
 .season-records {
     flex: 1 1 48%;
 }
+
 
 .graph-box {
     flex: 1 1 48%;
@@ -660,6 +683,13 @@ table {
     transform: translateY(-50%); 
     white-space: nowrap; 
     z-index: 2;
+}
+
+.performance-icon {
+    color: rgb(70, 101, 206);  /* Set the icon color */
+    margin-left: 10px;  /* Space between text and icon */
+    font-size: 24px;  /* Adjust icon size */
+    vertical-align: middle;
 }
 
 /* ===================== Media Queries ===================== */

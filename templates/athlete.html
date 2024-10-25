@@ -38,11 +38,15 @@
 
         <section class="season-info-container flex-container">
             <div class="season-records season-box">
-                <h2>Season Records</h2>
+                <h2>Season Records
+                    <i class="fas fa-chart-line season-icon"></i>
+                </h2>
                 {{ all_records_table | safe }}
             </div>
             <div class="graph-box">
-                <h2>Performance Graph</h2>
+                <h2>Performance Bar
+                    <i class="fas fa-tachometer-alt performance-icon"></i>
+                </h2>
                 <div class="performance-graph-container">
                     {% for year, time, progress in progress_data %}
                     <div class="progress-container">
