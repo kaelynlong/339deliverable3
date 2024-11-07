@@ -11,18 +11,18 @@
 </head>
 <body>
     <header>
-        <a href="index.html" class="nav-home-button" id="top">HOME</a>
+        <a href="index.html" class="nav-home-button" id="top" tabindex="1">HOME</a>
         <form action="#" method="get" class="search-form">
             <label for="search-input" class="sr-only">Search Athlete</label>
-            <input type="text" id="search-input" placeholder="Search Athlete" name="q" aria-label="Search Athlete">
-            <button type="submit" aria-label="Search">
+            <input type="text" id="search-input" placeholder="Search Athlete" name="q" aria-label="Search Athlete" tabindex="2">
+            <button type="submit" aria-label="Search" tabindex="3">
                 <i class="fas fa-search"></i> 
             </button>
         </form>
     </header>
 
     <main>
-        <h1 id="top-heading">{{ page_heading }}</h1>
+        <h1 id="top-heading" tabindex="-1">{{ page_heading }}</h1>
         <section class="meet-results">
             <div class="season-box">
                 <h2>Men’s Top 10</h2>
@@ -46,7 +46,7 @@
                                 {{ athlete['Rank'] }}
                             {% endif %}
                         </td>
-                        <td><a href="athlete-{{ athlete['Name'] | lower | replace(' ', '-') }}.html">{{ athlete['Name'] }}</a></td>
+                        <td><a href="athlete-{{ athlete['Name'] | lower | replace(' ', '-') }}.html" tabindex="4">{{ athlete['Name'] }}</a></td>
                         <td>{{ athlete['Time'] }}</td>
                     </tr>
                     {% endfor %}
@@ -74,7 +74,7 @@
                                 {{ athlete['Rank'] }}
                             {% endif %}
                         </td>
-                        <td><a href="athlete-{{ athlete['Name'] | lower | replace(' ', '-') }}.html">{{ athlete['Name'] }}</a></td>
+                        <td><a href="athlete-{{ athlete['Name'] | lower | replace(' ', '-') }}.html" tabindex="5">{{ athlete['Name'] }}</a></td>
                         <td>{{ athlete['Time'] }}</td>
                     </tr>
                     {% endfor %}
@@ -85,15 +85,15 @@
     
     <footer>
         <p>Created by Kaelyn Lin for SI 339</p>
-        <a href="#top-heading">Back to top</a>
+        <a href="#top-heading" tabindex="6">Back to top</a>
     </footer>
 
     <div class="fab-container">
-        <button id="fab-main" class="fab" aria-label="Information"><i class="fas fa-info-circle"></i></button>
+        <button id="fab-main" class="fab" aria-label="Information" tabindex="7"><i class="fas fa-info-circle"></i></button>
         <div id="fab-options" class="fab-options">
-            <button id="dark-mode-toggle" class="fab fab-small" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
-            <button id="motion-toggle" class="fab fab-small" aria-label="Toggle Reduced Motion"><i class="fas fa-walking"></i></button>
-            <button id="contrast-toggle" class="fab fab-small" aria-label="Toggle High Contrast"><i class="fas fa-adjust"></i></button>
+            <button id="dark-mode-toggle" class="fab fab-small" aria-label="Toggle Dark Mode" tabindex="8"><i class="fas fa-moon"></i></button>
+            <button id="motion-toggle" class="fab fab-small" aria-label="Toggle Reduced Motion" tabindex="9"><i class="fas fa-walking"></i></button>
+            <button id="contrast-toggle" class="fab fab-small" aria-label="Toggle High Contrast" tabindex="10"><i class="fas fa-adjust"></i></button>
         </div>
     </div>
 
