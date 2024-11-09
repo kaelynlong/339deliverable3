@@ -229,6 +229,14 @@
                 });
             });
         });
+        // Function to replace athlete image with default
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileImg = document.querySelector('.profile-picture img');
+
+            profileImg.addEventListener('error', function () {
+                this.src = 'images/pfpdefault.png';
+            });
+        });
     </script>
 </body>
 </html>
