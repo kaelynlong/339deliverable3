@@ -104,7 +104,7 @@
                     if (progressValue) {
                         bar.style.width = progressValue + '%';
                     }
-                }, 200);  // Delay by 200ms for a smooth effect
+                }, 200);
             });
         });
 
@@ -113,7 +113,7 @@
 
             // FAB expand/collapse logic
             const fabMain = document.getElementById('fab-main');
-            const fabContainer = document.querySelector('.fab-container'); // Select the fab-container
+            const fabContainer = document.querySelector('.fab-container');
             const fabOptions = document.getElementById('fab-options');
             const darkModeToggle = document.getElementById('dark-mode-toggle');
             const motionToggle = document.getElementById('motion-toggle');
@@ -155,6 +155,7 @@
                 });
             });
         });
+        
         // Function to replace athlete image with default
         document.addEventListener('DOMContentLoaded', function () {
             const profileImg = document.querySelector('.profile-picture img');
